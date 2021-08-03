@@ -1,0 +1,8 @@
+import random as rd
+
+def Emoticon():
+    
+    """Simple function that generates random emoticon. """
+        
+    sufix = ')(/*PO8'
+    return (print(':'+rd.choice(sufix)))
