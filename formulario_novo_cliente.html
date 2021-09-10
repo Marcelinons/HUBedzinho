@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Entrada de nova amostra</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <!-- Primeira Coluna (primeira metade da tela) -->
+        <div class="column">
+          <div style="text-align: center">
+            <h4><b>Dados gerais - Chegada da amostra</b></h4>
+          </div>
+          <form name="samp_info" method="POST" action="Cadastrar_amostra.php">
+            <input type="text" placeholder="Nome do Cliente" required="required" name="client"/><br>
+            <input type="text" placeholder="Endereço" required="required" name="address"/><br>
+            <input type="text" placeholder="Ponto de Coleta" required="required" name="coll_point"/><br>
+            <input type="date" required="required" name="data"/><br>
+            <input type="time" required="required" name="hora"/><br>            
+        </div>
+        <!-- Segunda coluna, tabelas e enviar (segunda metade da tela) -->
+        <div class="column">
+            <table border="1" class="table_style">
+              <caption>
+                <b><i><p>Tabela 1: Bglh la esqueci o nome</p></i></b>
+              </caption>
+              <tr>
+                <th>Data de ensaio</th>
+                <th><input type="date" required="required" name="data_table1"/></th>
+              </tr>
+              <tr>
+                <th><p>Coliformes Totais</p></th>
+                <th><p><i>Escherichia coli</i></p></th>
+              </tr>
+              <tr>
+                <th><input type="text" required="required" name="result_coliforms" placeholder="UFC/100mL" /></th>
+                <th><input type="number" required="required" name="result_esc_coli" placeholder="UFC/100mL"/></th>
+              </tr>
+            </table><br>
+            <table border="1" class="table_style">
+              <caption>
+                <b><i><p>Tabela 2: Padrões físico-químicos</p></i></b>
+              </caption>
+              <tr>
+                <th colspan="2">Data de ensaio</th>
+                <th colspan="2"><input type="date" name="data_table2" required="required"/></th>
+              </tr>
+              <tr>
+                <th><p>Cor Aparente</p></th>
+                <th><p>Cloro Livre</p></th>
+                <th><p>pH</p></th>
+                <th><p>Turbidez</p></th>
+              </tr>
+              <tr>
+                <th><input placeholder="uH" type="number" required="required" name="result_color"/></th>
+                <th><input placeholder="mg/L" type="number" required="required" name="result_chlorine"/></th>
+                <th><input type="number" required="required" name="result_ph"/></th>
+                <th><input placeholder="NTU" type="number" required="required" name="result_turbidity"/></th>
+              </tr>
+            </table>
+            <p><input type="submit" value="Enviar" name="send"/></p>
+          </form>  
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
