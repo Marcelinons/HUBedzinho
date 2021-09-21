@@ -1,5 +1,3 @@
-# CoolPrograms
-Random codes / programs
+# HUBedzinho
 
-Hello, this is Marcelinons. I really don't know what should I write on this,
-since this is my first repository here on github. 
+Hello, this is Marcelinons. HUBedzinho is a concept-project to a webside which will show bedwars strategies, such as "how to rush" things. Hope you like it.
