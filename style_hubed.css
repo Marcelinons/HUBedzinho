@@ -1,0 +1,55 @@
+* {
+  font-family:Helvetica;
+  box-sizing: border-box;
+  color:white;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+#box {
+  padding: 50px 100px 5px 100px;
+}
+
+p {
+  padding: 10px;
+}
+
+#menu ul{
+  padding: 5px 100px 5px 100px;
+  background-color: rgb(43, 43, 43);
+  list-style: none;
+}
+
+#menu ul li{
+  padding: 0px 30px 0px 0px;
+  display: inline;
+}
+
+#menu ul li a {
+  display: inline-block; 
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover, a:active {
+  color: greenyellow;
+}
+
+#_Title {
+  color:white;
+  font-weight: bold;
+  font-family: "courier new", monospace;
+  font-size: 35px;
+}
+
+._texto_puro {
+  font-family: Helvetica;
+  color:white;
+}
