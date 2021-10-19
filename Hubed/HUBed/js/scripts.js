@@ -28,11 +28,9 @@ $(function () {
   
   // Returns the map name
   var getMapName = function (maps) { 
-    var x = document.getElementById("map-searcher");
-    var mapName = x.elements[0].value;
-    var index = maps.findIndex(function(item, i){
-      return item.name === mapName;
-    });
+    var x = document.getElementById("map-searcher").value;
+    const search = obj => obj.label === x;
+    var index = array2.findIndex(search);
     return maps[index];
   };
 
@@ -62,12 +60,12 @@ $(function () {
   function showMapsPage () {
     $ajaxUtils.sendGetRequest(
       htmlHomeURL,
-      function (maps_Html) {
+      function (htmlHomeURL) {
         var data = getMapName(mapsUrl)
         var label = data.label;
         var blocks = data.blc_need;
         var iron = data.iron_gen;
-        var html = maps_Html;
+        var html = htmlHomeURL;
         html +=
           insertProperty(html, "label", label);
         html +=
