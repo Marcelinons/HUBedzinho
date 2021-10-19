@@ -61,7 +61,7 @@ $(function () {
     $ajaxUtils.sendGetRequest(
       htmlHomeURL,
       function (htmlHomeURL) {
-        var data = getMapName(mapsUrl)
+        var data = getMapName()
         var label = data.label;
         var blocks = data.blc_need;
         var iron = data.iron_gen;
