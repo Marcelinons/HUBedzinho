@@ -63,7 +63,6 @@ $(function () {
     $ajaxUtils.sendGetRequest(
       htmlHomeURL,
       function (maps_Html) {
-        document.querySelector("#main-content").innerHTML = homeHtml;
         var data = getMapName(mapsUrl)
         var label = data.label;
         var blocks = data.blc_need;
