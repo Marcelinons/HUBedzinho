@@ -19,7 +19,6 @@
           handleResponse(request, responseHandler, isJson);
         };
       request.open("GET", requestUrl, true);
-      request.send(null);
     };
 
   function handleResponse(request, responseHandler, isJson) {
