@@ -27,11 +27,11 @@ $(function () {
   };
   
   // Returns the map name
-  var getMapName = function (maps) { 
+  var getMapName = function () { 
     var x = document.getElementById("map-searcher").value;
     const search = obj => obj.label === x;
-    var index = maps.findIndex(search);
-    return maps[index];
+    var index = mapsUrl.findIndex(search);
+    return mapsUrl[index];
   };
 
   // Shows loading icon
