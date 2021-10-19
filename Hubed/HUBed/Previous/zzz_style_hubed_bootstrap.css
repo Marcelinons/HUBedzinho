@@ -1,0 +1,88 @@
+.img_top {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 210px;
+  background-image: linear-gradient(to bottom, transparent 0%, rgb(19,19,19) 95%), url("imagem_foda_amigos_minecraft_cortada.png");
+  background-position: center;
+}
+
+p {
+  color:white;
+}
+
+div h2 {
+  color: rgb(192, 192, 192);
+  text-decoration: solid;
+  margin-bottom: 10px;
+}
+
+div h1 {
+  color: #3dac59;
+  text-decoration-color: #3dac59;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  }
+
+#matakolas {
+  position: relative;
+  left: 0px;
+}
+
+#menu {
+  padding: 5px 100px 8px 100px;
+  font-size: 20px;
+  background-color: rgb(43, 43, 43);
+  text-align: center;
+}
+
+#menu ul {
+  display: inline;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#menu ul li {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  display: inline;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#menu ul li a {
+  color: white;
+  padding: 4px 10px 4px 10px;
+  border-radius: 2px;
+  transition: all 0.3s;
+  display: inline-block; 
+  text-decoration: none;
+}
+
+#menu ul li a:hover, #menu ul li a:active /*, #menu ul li a:focus, */ {
+  background: #3dac59;
+  color:white;
+}
+
+#menu ul li > .submenu {
+  display: none;
+  position: absolute;
+  top: 28px;
+  width: 150px;
+  left: 0px;
+  background: rgb(43, 43, 43);
+}
+
+#menu ul li:hover > ul {
+  display: block;
+}
+
+#_Title {
+  color:white;
+  font-weight: bold;
+  font-family: "courier new", monospace;
+  font-size: 35px;
+}
