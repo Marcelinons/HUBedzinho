@@ -11,7 +11,7 @@ $(function () {
 
   var dc = {};
 
-  var htmlHomeURL = "snippets/home-snippet.html";
+  var htmlHomeURL = "snippets/maps_snippet.html";
   var mapsUrl = "files/map_data.json"
 
   // Insert innerHTML for selected
