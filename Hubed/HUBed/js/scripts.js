@@ -30,7 +30,7 @@ $(function () {
   var getMapName = function (maps) { 
     var x = document.getElementById("map-searcher").value;
     const search = obj => obj.label === x;
-    var index = array2.findIndex(search);
+    var index = maps.findIndex(search);
     return maps[index];
   };
 
