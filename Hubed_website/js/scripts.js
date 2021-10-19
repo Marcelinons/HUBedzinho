@@ -11,8 +11,8 @@ $(function () {
 
   var dc = {};
 
-  var htmlHomeURL = "snippets/home-snippet.html";
-  var mapsUrl = "files/map_data.json"
+  var htmlHomeURL = "snippets/maps_snippet.html";
+  var mapsUrl = "map_data.json"
 
   // Insert innerHTML for selected
   var insertHtml = function (selector, html) {
