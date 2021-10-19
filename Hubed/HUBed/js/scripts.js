@@ -27,11 +27,10 @@ $(function () {
   };
   
   // Returns the map name
-  var getMapName = function () { 
-    var x = document.getElementById("map-searcher").value;
-    const search = obj => obj.label === x;
-    var index = mapsUrl.findIndex(search);
-    return mapsUrl[index];
+  var getMapName = function (maps) { 
+    var map_name = document.getElementById("map-searcher").value;
+    var index = maps.findIndex(x => x.label === map_name);
+    return maps[index];
   };
 
   // Shows loading icon
@@ -61,7 +60,7 @@ $(function () {
     $ajaxUtils.sendGetRequest(
       htmlHomeURL,
       function (htmlHomeURL) {
-        var data = getMapName()
+        var data = getMapName(mapsUrl)
         var label = data.label;
         var blocks = data.blc_need;
         var iron = data.iron_gen;
